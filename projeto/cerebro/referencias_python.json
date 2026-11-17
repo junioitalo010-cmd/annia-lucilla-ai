@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "registros": [
+    {
+      "id": "PY-NOMES",
+      "titulo": "Python 3.13 — Naming and binding",
+      "url": "https://docs.python.org/3.13/reference/executionmodel.html#binding-of-names",
+      "trecho": "Names refer to objects. Names are introduced by name binding operations.",
+      "notas_editoriais": "Nomes referem-se a objetos. Atribuir x = 5 liga o nome x ao objeto; reatribuir x = 10 muda essa ligação. Outro nome que ainda refira o objeto anterior não é automaticamente religado. Evitar definir variável apenas como uma caixa física de armazenamento.",
+      "registrado_em": "2026-11-08",
+      "registrado_por": "equipe_de_desenvolvimento",
+      "estado_registro": "pendente",
+      "idioma_original": "en",
+      "tipo_material": "trecho_curto_e_notas_editoriais",
+      "versao_documentacao": "3.13",
+      "sha256_trecho": "20c0787ff0b39c116c195693b9c0057dc09085c5abfb1a51437ffbdebd546b80",
+      "exemplo_editorial": {
+        "codigo": "x = 5\ny = x\nx = 10\nprint(x, y)",
+        "saida_esperada": "10 5\n",
+        "origem": "equipe_de_desenvolvimento",
+        "executado_na_consulta": false
+      }
+    },
+    {
+      "id": "PY-MUTABILIDADE",
+      "titulo": "Python 3.13 — Objects, values and types",
+      "url": "https://docs.python.org/3.13/reference/datamodel.html#objects-values-and-types",
+      "trecho": "numbers, strings and tuples are immutable, while dictionaries and lists are mutable.",
+      "notas_editoriais": "Listas são mutáveis e tuplas são imutáveis. A imutabilidade de uma tupla não implica que objetos mutáveis referenciados por seus elementos também sejam imutáveis. Uma lista dentro de uma tupla pode mudar sem substituir a referência mantida pela tupla. Não afirmar que tuplas dispensam estruturas internas ou que são sempre mais rápidas.",
+      "registrado_em": "2026-11-08",
+      "registrado_por": "equipe_de_desenvolvimento",
+      "estado_registro": "pendente",
+      "idioma_original": "en",
+      "tipo_material": "trecho_curto_e_notas_editoriais",
+      "versao_documentacao": "3.13",
+      "sha256_trecho": "30cb78d1ebf4048634aa61cb766ff48c84d5dc751d6544562510893304154c1e",
+      "exemplo_editorial": {
+        "codigo": "conteudo = [1]\nt = (conteudo,)\nconteudo.append(2)\nprint(t)",
+        "saida_esperada": "([1, 2],)\n",
+        "origem": "equipe_de_desenvolvimento",
+        "executado_na_consulta": false
+      }
+    },
+    {
+      "id": "PY-CONCATENACAO",
+      "titulo": "Python 3.13 — Common sequence operations",
+      "url": "https://docs.python.org/3.13/library/stdtypes.html#common-sequence-operations",
+      "trecho": "s + t",
+      "notas_editoriais": "A tabela da documentação define s + t como concatenação de sequências do mesmo tipo. Para tuplas, a concatenação é permitida. Com t = (1, 2), escrever t = t + (3,) cria o resultado concatenado e religa o nome t; não muda a tupla original. Isso é diferente de tentar atribuir t[0] = 9, operação que tuplas não suportam.",
+      "registrado_em": "2026-11-08",
+      "registrado_por": "equipe_de_desenvolvimento",
+      "estado_registro": "pendente",
+      "idioma_original": "en",
+      "tipo_material": "trecho_curto_e_notas_editoriais",
+      "versao_documentacao": "3.13",
+      "sha256_trecho": "4a198eeb8f5b00949d401eaa9ed15b1eae8a14c9e6ed611246cab7d280517683",
+      "exemplo_editorial": {
+        "codigo": "t = (1, 2)\nu = t + (3,)\nprint(t)\nprint(u)",
+        "saida_esperada": "(1, 2)\n(1, 2, 3)\n",
+        "origem": "equipe_de_desenvolvimento",
+        "executado_na_consulta": false
+      }
+    }
+  ]
+}
