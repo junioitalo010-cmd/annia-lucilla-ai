@@ -1,0 +1,1 @@
+ANNIA LUCILLA AI (Luci) — Projeto pessoal de assistente de IA local em Python, FastAPI e SQLite, com interface web, integração a modelo Ollama e ferramentas de memória persistente, backup e verificação de integridade. Projeto em desenvolvimento.

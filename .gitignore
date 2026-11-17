@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+# Segredos e ambiente
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Bancos e backups
+*.sqlite
+*.sqlite3
+*.sqlite3-*
+*.db
+backups/
+backup/
+*.bak
+# Dados pessoais e execução
+projeto/dados/memoria.json
+projeto/dados/experiencias.json
+projeto/dados/conhecimentos.json
+projeto/dados/decisoes.json
+*.log
+.DS_Store
+Thumbs.db
